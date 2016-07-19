@@ -35,18 +35,17 @@
     self.progressColor = GreenColor;
     [self drawRoundRectPath];
     self.exerciseProgress = 60;
-    
 }
 - (CAShapeLayer *)drawRoundRectPath{
     CAShapeLayer *circleLayer = [CAShapeLayer layer];
     //指定frame，只是为了设置宽度和高度
-    circleLayer.frame = CGRectMake(0, 0, self.frame.size.width, self.frame.size.height );
+    circleLayer.frame = CGRectMake(0, 0, self.frame.size.width - kLineWidth, self.frame.size.height - kLineWidth);
     //设置居中显示
     circleLayer.position = self.center;
     //设置填充颜色
     circleLayer.fillColor = [UIColor clearColor].CGColor;
     //设置线宽
-    circleLayer.lineWidth = 2.0;
+    circleLayer.lineWidth = kLineWidth;
     //设置线的颜色
     circleLayer.strokeColor = RGBA(246, 246, 246, 1.0).CGColor;
     
@@ -66,7 +65,7 @@
     
     //加底部灰色圆环
     self.outLayer = [CAShapeLayer layer];
-    UIBezierPath *path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(8, self.frame.size.height/2 - (self.frame.size.width - 16)/2, self.frame.size.width - 16, self.frame.size.width - 16)];
+    UIBezierPath * path = [UIBezierPath bezierPathWithArcCenter:self.contentView.center radius:(self.frame.size.width - 16)/2 startAngle:degreesToRadians(-90) endAngle:degreesToRadians(270)  clockwise:YES];
     self.outLayer.strokeColor = [UIColor lightGrayColor].CGColor;
     self.outLayer.lineWidth = kLineWidth;
     self.outLayer.fillColor = [UIColor clearColor].CGColor;

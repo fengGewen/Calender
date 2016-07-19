@@ -11,6 +11,6 @@
 @interface ExerciseCalenderCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
-@property(nonatomic) CGFloat *exerciseProgress;
-
+@property(nonatomic) CGFloat exerciseProgress;
+@property (nonatomic) UIColor * progressColor;
 @end

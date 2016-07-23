@@ -40,7 +40,7 @@
     //布局
     UICollectionViewFlowLayout *layout=[[UICollectionViewFlowLayout alloc] init];
     //设置item的宽高
-    layout.itemSize=CGSizeMake([UIScreen mainScreen].bounds.size.width/7, [UIScreen mainScreen].bounds.size.width/7 + 5);
+    layout.itemSize=CGSizeMake([UIScreen mainScreen].bounds.size.width/7, [UIScreen mainScreen].bounds.size.width/7 + 5); 
     //设置滑动方向
     layout.scrollDirection=UICollectionViewScrollDirectionVertical;
     //设置行间距

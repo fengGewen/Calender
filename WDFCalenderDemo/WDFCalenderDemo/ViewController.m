@@ -26,8 +26,6 @@
 //    WDFCalenderViewController * vc = [[WDFCalenderViewController alloc] init];
 //    vc.calenderType = TemperatureCalender;
 //    [vc addParentController:self];
-    
-    
 }
 - (IBAction)temperature:(id)sender {
     calss1ViewController * vc = [[calss1ViewController alloc] init];

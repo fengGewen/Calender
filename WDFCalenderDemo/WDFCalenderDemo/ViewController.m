@@ -12,7 +12,7 @@
 #import "ViewController3.h"
 #import "ViewController4.h"
 #import "WDFCalenderViewController.h"
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define kScreenWidth  [UIScreen mainScreen].bounds·.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 @interface ViewController ()
 
@@ -25,7 +25,7 @@
 //    self.view.backgroundColor = [UIColor redColor];
 //    WDFCalenderViewController * vc = [[WDFCalenderViewController alloc] init];
 //    vc.calenderType = TemperatureCalender;
-//    [vc addParentController:self];
+//    [vc addParentController:self];···
 }
 - (IBAction)temperature:(id)sender {
     calss1ViewController * vc = [[calss1ViewController alloc] init];
